@@ -44,12 +44,16 @@ describe('fizzBuzz', function () {
       expect(game.play(3)).toEqual('Fizz');
     });
 
-    it('it should print buzz if number is divisible by 3', function(){
+    it('it should print buzz if number is divisible by 5', function(){
       expect(game.play(5)).toEqual('Buzz');
     });
 
-    it('it should print fizz if number is divisible by 3', function(){
+    it('it should print fizz if number is divisible by 15', function(){
       expect(game.play(15)).toEqual('FizzBuzz');
+    });
+
+    it('it should print number if number is not divisible by 3, 5, 15', function(){
+      expect(game.play(2)).toEqual(2);
     });
   });
 
