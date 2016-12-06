@@ -55,6 +55,12 @@ describe('fizzBuzz', function () {
     it('it should print number if number is not divisible by 3, 5, 15', function(){
       expect(game.play(2)).toEqual(2);
     });
+
+    it('it should print 0 if number is 0', function(){
+      expect(game.play(0)).toEqual(0);
+    });
+
+
   });
 
 
